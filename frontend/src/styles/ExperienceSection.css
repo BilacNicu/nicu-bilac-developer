@@ -1,0 +1,172 @@
+.experienceSectionDiv{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.aboutExp{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 15vw;
+    padding-top: 5rem;  
+    width: 100% 
+}
+.experienceTitle{
+    width: 100%;
+}
+.experienceDiv{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.experienceHeading{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#topHeading{
+    margin-top: 25px;
+}
+
+.companyAndPosition{
+   font-weight: bold;
+   font-size: 22px;
+   margin: 0;
+   margin-top: 15px;
+}
+#position{
+    color: var(--green-accent);
+}
+.timeAndLocation{
+    font-weight: 400;
+    font-size: 22px;
+    margin: 0;
+    margin-top: 15px;
+}
+
+.dot{
+    color:var(--green-accent);
+}
+.jobDescriptionDiv{
+    margin-top: 30px;
+}
+.jobDescription{
+    text-align: left;
+    font-size: max(19px, 1.4vw); 
+    font-weight: 200;
+    margin: 0;
+    color: var(--small-text-color);
+}
+
+.techUsedDiv{
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    flex-wrap: wrap;
+}
+.tech-item-work{
+    background-color: #333; /* Dark background */
+    color: #fff; /* White text */
+    padding: 8px 16px; /* Vertical and horizontal padding */
+    border-radius: 16px; /* Fully rounded edges */
+    font-size: 16px; /* Adjust font size as needed */
+    /* Optional: Adds a box-shadow to give a "raised" effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+#first-item{
+    margin-left: 0;
+}
+#company{
+    font-size: 28px;
+}
+
+@media (max-width: 1000px) {
+  .companyAndPosition{
+    display: flex;
+    align-items: flex-end;
+    font-size: 18px;
+    margin: 0;
+    height: 100%;
+    
+  }
+  .timeAndLocation{
+    display: flex;
+    align-items: flex-end;
+    font-size: 18px;
+    margin: 0;
+    height: 100%;
+  }
+  #topHeading{
+    margin-top: 15px;
+  }
+  #time{
+    margin-bottom: 5px;
+  }
+  #company{
+    margin-bottom: 5px;
+    font-size: 22px;
+  }
+  #bottomHeading{
+    margin-top: 10px;
+  }
+  .jobDescription{
+    font-size: 16px;
+  }
+  #first-item{
+    margin-left: 10px;
+  }
+  .aboutExp{
+    height: 80vh;
+  }
+}
+
+@media (max-width:600px)
+{
+    .aboutExp{
+      padding: 15px;
+      height: 150vw;
+    }
+    #mailSpan{
+      display: flex;
+      align-items: center;
+    }
+    .mailLink1{
+      display: flex;
+      align-items: center;
+    }
+}
+
+@media (max-width:350px)
+{
+    .experienceSectionDiv{
+        height: 300vw;
+    }
+    
+    #position{
+        text-align:start;
+        width: 130px;
+        font-size: 14px;
+    }
+    #company{
+        font-size: 16px;
+    }
+    #time{
+        font-size: 14px;
+    }
+    #location{
+        font-size: 14px;
+    }
+    .aboutExp{
+      width: 110vw;
+    }
+    #experience {
+      scroll-margin-top: 55px;  /* Adjust this value to match your fixed header height */
+  }
+  }

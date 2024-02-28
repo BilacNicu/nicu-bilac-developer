@@ -1,0 +1,79 @@
+.navbar{
+    height: 100vh; /* Or less, if you want some space for the header */
+    position: fixed;
+    background-color: var(--background-dark);
+    top: 0;
+    left: 0;
+    width: 60px; /* Adjust based on your design */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.link{
+    height: 100px;
+    width: 60px;
+    writing-mode: vertical-lr; /* This will set the text direction to vertical */
+    transform: rotate(360deg); /* This will flip the text so it reads from bottom to top */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #9a9a9a;
+    transition:all 0.3s ease-in-out;
+    border: none;
+}
+.link:hover,
+.link:focus{
+    color: white;
+}
+.link:before{
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background-color: #0aff9d;
+    transition: transform 0.3s ease-in-out;
+    transform: scaleY(0);
+    transform-origin: top;
+}
+.link:hover::before, 
+.link:focus::before{
+    transform: scaleY(1);
+}
+
+.sidebarLogo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 75px;
+    width: 60px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor:default;
+}
+.sidebarLogo span{
+    color: #0aff9d;
+}
+
+@media (max-width: 420px) {
+    .navbar{
+        width: 35px;
+    }
+    .sidebarLogo{
+        width: 35px;
+    }
+    .link{
+        font-size: 15px;
+        width: 35px;
+    }
+    .sidebarLogo{
+        font-size: 18px;
+        width: 35px;
+    }
+}

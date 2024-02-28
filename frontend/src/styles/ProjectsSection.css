@@ -1,0 +1,301 @@
+.projectsSectionDiv{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.projectsDescription{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 15vw;
+    padding-top: 9.6rem;
+    padding-bottom: 0;
+    width: 100vw;
+    
+}
+.projectsTitle{
+    width: 100%;
+}
+.h1P{
+   font-size: max(35px, 3.5vw); 
+   text-align: left;
+   margin: 0;
+   padding: 0;
+   padding-bottom: 3rem;
+   position: relative;
+   display: inline-flex;
+   align-items: center;
+   width: 100%;
+}
+.dot{
+    color:var(--green-accent);
+}
+
+.projectP{
+    text-align: left;
+    max-width: 700px;
+    font-size: max(19px, 1.4vw); 
+    font-weight: 200;
+    margin: 0;
+    width: 100%;
+    padding-right: 20px;
+    margin-top: 25px;
+}
+.p1D3{
+    margin-bottom: 25px;
+}
+
+
+.contentDescription{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.projectsDiv{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3.2rem;
+    gap: 3.2rem;
+    width: 100%;
+}
+
+.project{
+    display: flex;
+  align-items: center; /* Vertical centering */
+  justify-content: center; /* Horizontal centering */
+  width: 100%; /* Set the width to fit the container */
+  height: 30vw; /* Set the height to fit the container, or to a fixed height as needed */
+  flex-direction: column;
+
+}
+
+.projectImage{
+    width: 100%; 
+    background-color: var(--background-light); 
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    border-radius: 10px;
+    height: 60%;
+}
+.img{
+  width: 90%;    /* Use a percentage of the containing block's width */
+  height: 85%;   /* Height is set to auto to maintain the aspect ratio */
+  border-radius: 10px; 
+}
+
+
+.projectsDescription{
+    width: 100%;
+}
+.projectDescription{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.spanSVG2{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.svgIcon2{
+    height: 30px;
+    width: 30px;
+    fill: #0aff9d; /* Green color on hover */
+}
+.spanSVG{
+    margin: 2px;
+}
+
+.titleAndLinks{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    
+}
+.titleProject{
+    margin: 0;
+    padding: 0;
+    padding-top: 10px;
+    font-size: 1.8vw;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-direction: row;
+}
+.lineProject, .lineProjects{
+    content: '';
+    display: block;
+    height: 1px; /* Thickness of the line */
+    background-color: var(--small-text-color); /* Color of the line */
+    flex-grow: 1; /* Allows the line to fill the remaining space */
+    margin-left: 10px; /* Space between the text and the line */
+    width: 40%;
+    margin-right: 10px;
+}
+.projectSVG{
+    margin: 0;
+    padding: 0;
+}
+.spanSVG{
+    padding: 0;
+    padding-top: 5px;
+}
+
+.techUsed{
+    text-align: left;
+    font-weight: 400;
+    margin: 0;
+    padding-top: 5px;
+    color: var(--green-accent);
+}
+
+.projectDescription{
+    text-align: left;
+}
+#lineP{
+    margin-right: 10px;
+    margin-left: 0;
+}
+
+.projectImageMotionDiv
+{
+    width: 100%; 
+    background-color: var(--background-light); 
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    border-radius: 10px;
+    height: 100%;
+    cursor: pointer;
+}
+.motionDiv{
+    height: 100%;
+    width: 100%;
+}
+
+.projectModal{
+    z-index: 100;
+}
+
+@media (max-width: 1600px)
+{
+    #msgLine{
+        width: 10%;
+    }
+}
+
+@media (max-width: 1000px)
+{
+    .projectsSectionDiv{
+        height: 390vw;
+    }
+    .project{
+        width: 100%;
+        height: 80vw;
+    }
+    .img{
+        width: fit-content;
+    }
+    .projectsDiv{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        
+    }
+    .titleProject{
+        font-size: 6vw;
+    }
+    .lineProject{
+      display: none;
+    }
+    .lineProjects, #msgLine{
+        width: 1px;
+    }
+    .svgIconP{
+       width: 100%;
+    }
+    .techUsed{
+        font-size: 13px;
+    }
+    .projectImage{
+        height: 50%;
+    }
+    .projectsDescription{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 600px) {
+    .projectsDescription{
+        padding-top: 2rem;
+        padding: 15px;
+        height: 190vh;
+    }
+    .aboutMeDescription{
+        padding:15px;
+    }
+    .technologiesUsed{
+        max-height: 430px;
+    }
+    .h1P{
+        display: block;
+    }
+    .p1D1, .p1D2, .p1D3{
+        font-size: 16px;
+    }
+    .linksDescription{
+        font-size: 25px;
+    }
+    .spanSVG2{
+        height: 10px;
+        width: 32px;
+    }
+
+    .headingLinksAbout{
+        margin: 0;
+        margin-left: 10px;
+        width: 32%;
+    }
+    .spanSVG{
+        margin: 0;
+    }
+    #projectImgCV{
+        margin-top: 10px;
+    }
+    #msgLine{
+        width: 0.1%;
+    }
+    
+
+}
+
+@media (max-width: 350px) {
+    .projectsSectionDiv{
+        height: 410vw;
+    }
+    .linksDescription{
+        font-size: 25px;
+    }
+    .spanSVG{
+        width: 26px;
+        margin:0;
+    }
+    .headingLinksAbout{
+        width: 35%;
+    }
+    .projectsDiv{
+        height: fit-content;
+    }
+    #projects{
+        scroll-margin-top: 55px;
+    }
+    
+    
+}
