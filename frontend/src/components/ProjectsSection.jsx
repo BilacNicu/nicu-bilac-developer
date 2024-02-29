@@ -171,7 +171,7 @@ return (
          <div className="projectImage" id="projectImgCV">
          <ProjectHover><img src={CVApplicationImg} className="img" onClick={() => openModalOrLink2(projects[1])} ></img></ProjectHover> 
             </div>
-            <RevealP2><div className="projectDescription">
+            <RevealP><div className="projectDescription">
                <div className="titleAndLinks">
                 <h1 className="titleProject">CV Builder<span className="lineProjects"></span><span className="spanSVG" id="projectSVG">
           <a  href="https://github.com/BilacNicu/cv_application" target="_blank" rel="noopener noreferrer">
@@ -214,14 +214,14 @@ return (
             >
              {selectedProject  && <Modal project={selectedProject} handleClose={closeModal} />}
             </AnimatePresence>
-            </div></RevealP2>
+            </div></RevealP>
         </div>
 
         <div className="project">
             <div className="projectImage">
             <ProjectHover><img src={furnitureWebsiteImg} className="img" onClick={() => openModalOrLink3(projects[2])} ></img></ProjectHover>
             </div>
-            <Reveal> <div className="projectDescription">
+            <RevealP> <div className="projectDescription">
                <div className="titleAndLinks">
                 <h1 className="titleProject">Nic Nel Prod<span className="lineProjects"></span><span className="spanSVG" id="projectSVG">
           <a  href="https://github.com/BilacNicu/nic-nel-prod" target="_blank" rel="noopener noreferrer">
@@ -263,7 +263,7 @@ return (
             >
              {selectedProject  && <Modal project={selectedProject} handleClose={closeModal} />}
             </AnimatePresence>
-            </div></Reveal>
+            </div></RevealP>
         </div>
 
         <div className="project">
